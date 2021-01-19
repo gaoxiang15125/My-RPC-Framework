@@ -1,7 +1,6 @@
 package main;
 
-import selfrpc.NettyClient;
-import selfrpc.NettyServer;
+import selfrpc.service.NettyServer;
 
 /**
  * @program: MyRpcStudy

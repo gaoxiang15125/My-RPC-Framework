@@ -1,6 +1,6 @@
 package main;
 
-import selfrpc.NettyClient;
+import selfrpc.client.NettyClient;
 import selfrpc.util.bean.RPCRequest;
 import selfrpc.util.bean.RPCResponse;
 

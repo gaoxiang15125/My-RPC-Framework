@@ -1,4 +1,4 @@
-package selfrpc.sub;
+package selfrpc.client.sub;
 
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;

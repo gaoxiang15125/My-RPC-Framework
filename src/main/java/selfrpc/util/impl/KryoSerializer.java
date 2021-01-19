@@ -73,33 +73,4 @@ public class KryoSerializer implements SelfSerializer {
         }
     }
 
-    public static void main(String[] args) {
-//        String message = "譬如凤凰浴火，犹未可知";
-        KryoSerializer kryoSerializer = new KryoSerializer();
-//        byte[] messageBytes = kryoSerializer.serialize(message);
-//        byte[] noSerialBytes = message.getBytes();
-//        System.out.println(messageBytes.length);
-//        System.out.println(noSerialBytes.length);
-//        String result = kryoSerializer.deSerialize(messageBytes, String.class);
-//        System.out.println(result);
-        TestMessage testMessage = new TestMessage("三笠", "立体机动");
-        byte[] messageBytes = kryoSerializer.serialize(testMessage);
-        System.out.println(messageBytes.length);
-        TestMessage hehe = kryoSerializer.deSerialize(messageBytes, TestMessage.class);
-        System.out.println(hehe);
-        // 获取 Java 序列化后对象
-//        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-//        outputStream.write(testMessage);
-//        byte[] noSerialBytes =
-    }
-}
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-class TestMessage {
-    String name;
-    String methodName;
-    public void sayHello() {
-        System.out.println("my name is " + name + ", I have method " + methodName);
-    }
 }

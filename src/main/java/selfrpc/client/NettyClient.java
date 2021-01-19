@@ -1,4 +1,4 @@
-package selfrpc;
+package selfrpc.client;
 
 import com.alibaba.fastjson.JSON;
 import io.netty.bootstrap.Bootstrap;
@@ -8,9 +8,8 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import io.netty.util.AttributeKey;
 import lombok.extern.slf4j.Slf4j;
-import selfrpc.sub.NettyClientHandler;
+import selfrpc.service.sub.NettyClientHandler;
 import selfrpc.util.NettyKryoDecoder;
 import selfrpc.util.NettyKryoEncoder;
 import selfrpc.util.SelfSerializer;

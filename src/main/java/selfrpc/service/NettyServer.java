@@ -1,4 +1,4 @@
-package selfrpc;
+package selfrpc.service;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -12,7 +12,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
 import main.ClientMain;
-import selfrpc.sub.NettyServerHandler;
+import selfrpc.client.sub.NettyServerHandler;
 import selfrpc.util.NettyKryoDecoder;
 import selfrpc.util.NettyKryoEncoder;
 import selfrpc.util.SelfSerializer;
